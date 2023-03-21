@@ -1,0 +1,130 @@
+/* Variables */
+:root {
+  --blanco: rgb(253, 254, 254);
+  --negro: rgb(0, 0, 0);
+  --primario: rgb(0, 151, 167);
+  --secundario: rgb(238, 183, 20);
+}
+
+/* Globales */
+html {
+  font-size: 62.5%; /* Para que 1rem valga 10px */
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Finlandica", Prompt;
+}
+
+
+/* Tipografia */
+h1 {
+    font-size: 3.8rem;
+}
+h2 {
+    font-size: 2.8rem;
+}
+h3 {
+    font-size: 1.8rem;
+}
+/* Utilidades */
+
+.container {
+   max-width: 120rem;
+   margin: 0 auto;
+}
+
+/* Header */
+
+header {
+  text-align: center;
+}
+
+header span {
+  font-size: 1.5rem;
+}
+
+/* Nav */
+.nav {
+    background-color: var(--primario);
+}
+
+.nav__main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__main a{
+    color: var(--blanco);
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.nav__main a:hover{
+    color: var(--negro);
+    background-color: var(--secundario);
+}
+.hero{
+    background-image: url(../img/imghero.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 450px;
+    position: relative;
+    margin-bottom: 2rem;
+}
+.hero__content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Agregamos un ancho del 100% del contenedor */
+    height: 100%; /* Agregamos un alto del 100% del contenedor */
+    background-color: rgb(0 0 0 / 70%); /* Agregando sombreado */
+}
+
+.hero__content h2,
+.hero__content p {
+    color: var(--blanco);
+
+}
+
+.location{
+    display: flex;
+    align-items: flex-end;
+}
+
+.button {
+    text-decoration: none;
+    background-color: var(--primario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: .5rem;
+    font-size: 2rem;
+    margin-top: 3rem;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
